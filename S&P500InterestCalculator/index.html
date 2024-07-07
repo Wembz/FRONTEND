@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P500 Compound Interest Calculator</title>
+    <link rel="stylesheet" href="styling.css"/>
+</head>
+<body>
+    <!-- heading -->
+   <div class="container">
+    <h2> S&P 500 Compound Interest Calculator</h2>
+    <form id="compoundInterestForm">
+
+        <!--FORM  -->
+        <div class="form group">
+        <label for=" InitialInvestment">Initial
+            Investment:</label>
+        <input type="number" id="InitialInvestment" name="InitialInvestment" step="any" required><br>
+        </div>
+
+        <div class="form group">
+        <label for="MonthlyContribution">Monthly
+            Contribution:</label>
+        <input type="number" id="MonthlyContribution" name="MonthlyContribution" step="any"required><br>
+        </div>
+        
+        <div class="form group">
+            <label for="AnnualIterestRate">AnnualIterestRate:</label>
+            <input type="number" id="AnnualIterestRate" name="AnnualIterestRate" step="any" required><br>
+            </div>
+
+         <div class="form group">
+                <label for="inverstmentDuration">inverstmentDuration:</label>
+                <input type="number" id="inverstmentDuration" name="inverstmentDuration" step="any"required><br>
+                </div>
+                    
+  <button type="submit"> Calculate Future Value</button> 
+    </form>
+
+    <div id="Results"></div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
